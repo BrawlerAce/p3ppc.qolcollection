@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p3ppc.qolcollection", "p3ppc.qolcollection\p3ppc.qolcollection.csproj", "{F1DA86B2-461E-40FB-91BF-285BAC8FFE84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1DA86B2-461E-40FB-91BF-285BAC8FFE84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DA86B2-461E-40FB-91BF-285BAC8FFE84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DA86B2-461E-40FB-91BF-285BAC8FFE84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DA86B2-461E-40FB-91BF-285BAC8FFE84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E07DDD9F-6984-4C61-B157-90C19E21D0DE}
+	EndGlobalSection
+EndGlobal
