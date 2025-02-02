@@ -5,6 +5,10 @@ VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p3ppc.qolcollection", "p3ppc.qolcollection\p3ppc.qolcollection.csproj", "{F1DA86B2-461E-40FB-91BF-285BAC8FFE84}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CriFs.V2.Hook.Interfaces", "Interfaces\CriFs.V2.Hook.ReloadedII\Interfaces\CriFs.V2.Hook.Interfaces\CriFs.V2.Hook.Interfaces.csproj", "{F03EDE3C-81CD-4543-93D9-AA8D4596E4A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PAK.Stream.Emulator.Interfaces", "Interfaces\FileEmulationFramework\Emulator\Interfaces\PAK.Stream.Emulator.Interfaces\PAK.Stream.Emulator.Interfaces.csproj", "{457A9D53-A4DC-4BAA-A95E-0D5AFD755D87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{F1DA86B2-461E-40FB-91BF-285BAC8FFE84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1DA86B2-461E-40FB-91BF-285BAC8FFE84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1DA86B2-461E-40FB-91BF-285BAC8FFE84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F03EDE3C-81CD-4543-93D9-AA8D4596E4A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F03EDE3C-81CD-4543-93D9-AA8D4596E4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F03EDE3C-81CD-4543-93D9-AA8D4596E4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F03EDE3C-81CD-4543-93D9-AA8D4596E4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{457A9D53-A4DC-4BAA-A95E-0D5AFD755D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{457A9D53-A4DC-4BAA-A95E-0D5AFD755D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{457A9D53-A4DC-4BAA-A95E-0D5AFD755D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{457A9D53-A4DC-4BAA-A95E-0D5AFD755D87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
