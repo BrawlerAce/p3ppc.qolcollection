@@ -87,16 +87,16 @@ namespace p3ppc.qolcollection
             {
             };
 
-            if (_configuration.UsefulDesc == true)
+            if (_configuration.Description == Config.DescriptionEnum.UsefulDescriptions)
             {
-                //criFsApi.AddProbingPath("UD1");
-                _PakEmulator.AddDirectory(Path.Combine(modDir, "UD1", "PAK"));
+                //criFsApi.AddProbingPath(Path.Combine(modDir, "Descriptions/UsefulDescriptions/PAK"));
+                _PakEmulator.AddDirectory(Path.Combine(modDir, "Descriptions/UsefulDescriptions/PAK"));
             }
 
-            if (_configuration.UsefulDesc == false)
+            if (_configuration.Description == Config.DescriptionEnum.Maragion)
             {
-                //criFsApi.AddProbingPath("UD0");
-                _PakEmulator.AddDirectory(Path.Combine(modDir, "UD0", "PAK"));
+                //criFsApi.AddProbingPath(Path.Combine(modDir, "Descriptions/Maragion/PAK"));
+                _PakEmulator.AddDirectory(Path.Combine(modDir, "Descriptions/Maragion/PAK"));
             }
         }
 

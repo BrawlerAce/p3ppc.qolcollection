@@ -1,9 +1,9 @@
 {
   "ModId": "p3ppc.qolcollection",
   "ModName": "P3P QOL Collection",
-  "ModAuthor": "Brawler, GabiShy, wxnder, yukiyoneko",
-  "ModVersion": "2.0.0",
-  "ModDescription": "A collection of QOL mods to enhance Persona 3 Portable. This mod adds higher quality audio, several localization fixes, and optional detailed descriptions which can be toggled in the mod configuration.",
+  "ModAuthor": "Brawler, Stewie1.0, yukiyoneko, GabiShy, wxnder",
+  "ModVersion": "2.3.0",
+  "ModDescription": "A collection of QOL mods to enhance Persona 3 Portable PC. This mod adds higher quality audio, localization fixes, HQ source textures for fields, optional detailed descriptions (togglable in the mod configuration), and more!",
   "ModDll": "p3ppc.qolcollection.dll",
   "ModIcon": "Preview.png",
   "ModR2RManagedDll32": "x86/p3ppc.qolcollection.dll",
@@ -11,13 +11,30 @@
   "ModNativeDll32": "",
   "ModNativeDll64": "",
   "Tags": [],
-  "CanUnload": null,
-  "HasExports": null,
+  "CanUnload": false,
+  "HasExports": false,
   "IsLibrary": false,
   "ReleaseMetadataFileName": "p3ppc.qolcollection.ReleaseMetadata.json",
+  "IgnoreRegexes": [
+    ".*\\.json"
+  ],
+  "IncludeRegexes": [
+    "\\.deps\\.json",
+    "\\.runtimeconfig\\.json",
+    "ModConfig\\.json"
+  ],
   "PluginData": {
     "GitHubDependencies": {
       "IdToConfigMap": {
+        "BGME.Framework": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "BGME",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "BGME.Framework.ReleaseMetadata.json"
+        },
         "crifs.v2.hook": {
           "Config": {
             "UserName": "Sewer56",
@@ -45,6 +62,15 @@
           },
           "ReleaseMetadataName": "BF.File.Emulator.ReleaseMetadata.json"
         },
+        "reloaded.universal.fileemulationframework.bmd": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "FileEmulationFramework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "BMD.File.Emulator.ReleaseMetadata.json"
+        },
         "reloaded.universal.fileemulationframework.pak": {
           "Config": {
             "UserName": "Sewer56",
@@ -53,6 +79,24 @@
             "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "PAK.Stream.Emulator.ReleaseMetadata.json"
+        },
+        "Ryo.Reloaded": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "Ryo",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Ryo.Reloaded.ReleaseMetadata.json"
+        },
+        "BGME.Framework.API": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "BGME",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "BGME.Framework.API.ReleaseMetadata.json"
         },
         "Reloaded.Memory.SigScan.ReloadedII": {
           "Config": {
@@ -72,6 +116,15 @@
           },
           "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
         },
+        "SharedScans.Reloaded": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "SharedScans",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "SharedScans.Reloaded.ReleaseMetadata.json"
+        },
         "CriFs.V2.Hook.Awb": {
           "Config": {
             "UserName": "Sewer56",
@@ -80,6 +133,33 @@
             "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "CriFs.V2.Hook.Awb.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Framework": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Framework.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Provider.Steam": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Provider.Steam.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Provider.Windows": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Provider.Windows.ReleaseMetadata.json"
         },
         "reloaded.universal.fileemulationframework.awb": {
           "Config": {
@@ -108,9 +188,12 @@
   },
   "IsUniversalMod": false,
   "ModDependencies": [
+    "BGME.Framework",
     "crifs.v2.hook",
     "p5rpc.modloader",
+    "reloaded.sharedlib.hooks",
     "reloaded.universal.fileemulationframework.bf",
+    "reloaded.universal.fileemulationframework.bmd",
     "reloaded.universal.fileemulationframework.pak",
     "Ryo.Reloaded"
   ],
@@ -118,5 +201,5 @@
   "SupportedAppId": [
     "p3p.exe"
   ],
-  "ProjectUrl": ""
+  "ProjectUrl": "https://gamebanana.com/mods/501202"
 }
