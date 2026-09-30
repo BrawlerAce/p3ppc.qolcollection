@@ -2,7 +2,7 @@
   "ModId": "p3ppc.qolcollection",
   "ModName": "P3P QOL Collection",
   "ModAuthor": "Brawler, Stewie1.0, yukiyoneko, GabiShy, wxnder",
-  "ModVersion": "2.3.0",
+  "ModVersion": "2.4.1",
   "ModDescription": "A collection of QOL mods to enhance Persona 3 Portable PC. This mod adds higher quality audio, localization fixes, HQ source textures for fields, optional detailed descriptions (togglable in the mod configuration), and more!",
   "ModDll": "p3ppc.qolcollection.dll",
   "ModIcon": "Preview.png",
@@ -52,6 +52,15 @@
             "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "p5rpc.modloader.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
         },
         "reloaded.universal.fileemulationframework.bf": {
           "Config": {
@@ -106,15 +115,6 @@
             "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "Reloaded.Memory.SigScan.ReloadedII.ReleaseMetadata.json"
-        },
-        "reloaded.sharedlib.hooks": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
-            "UseReleaseTag": true,
-            "AssetFileName": "reloaded.sharedlib.hooks.zip"
-          },
-          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
         },
         "SharedScans.Reloaded": {
           "Config": {
@@ -190,6 +190,7 @@
   "ModDependencies": [
     "BGME.Framework",
     "crifs.v2.hook",
+    "p4gpc.inaba",
     "p5rpc.modloader",
     "reloaded.sharedlib.hooks",
     "reloaded.universal.fileemulationframework.bf",

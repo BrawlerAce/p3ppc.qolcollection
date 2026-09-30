@@ -89,14 +89,26 @@ namespace p3ppc.qolcollection
 
             if (_configuration.Description == Config.DescriptionEnum.UsefulDescriptions)
             {
-                //criFsApi.AddProbingPath(Path.Combine(modDir, "Descriptions/UsefulDescriptions/PAK"));
+                //criFsApi.AddProbingPath(Path.Combine(modDir, "Descriptions/UsefulDescriptions/CriV2"));
                 _PakEmulator.AddDirectory(Path.Combine(modDir, "Descriptions/UsefulDescriptions/PAK"));
             }
 
-            if (_configuration.Description == Config.DescriptionEnum.Maragion)
+            else if (_configuration.Description == Config.DescriptionEnum.Maragion)
             {
-                //criFsApi.AddProbingPath(Path.Combine(modDir, "Descriptions/Maragion/PAK"));
+                //criFsApi.AddProbingPath(Path.Combine(modDir, "Descriptions/Maragion/CriV2"));
                 _PakEmulator.AddDirectory(Path.Combine(modDir, "Descriptions/Maragion/PAK"));
+            }
+
+            if (_configuration.BattleModels == Config.BattleModelEnum.P3F)
+            {
+                criFsApi.AddProbingPath(Path.Combine(modDir, "BattleModels/P3F/CriV2"));
+                _PakEmulator.AddDirectory(Path.Combine(modDir, "BattleModels/P3F/PAK"));
+            }
+
+            else
+            {
+                criFsApi.AddProbingPath(Path.Combine(modDir, "BattleModels/P3P/CriV2"));
+                _PakEmulator.AddDirectory(Path.Combine(modDir, "BattleModels/P3P/PAK"));
             }
         }
 

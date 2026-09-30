@@ -35,6 +35,13 @@ namespace p3ppc.qolcollection.Configuration
             [Display(Name = "Stock P3P")]
             Stock,
         }
+        public enum BattleModelEnum
+        {
+            [Display(Name = "Persona 3 FES")]
+            P3F,
+            [Display(Name = "Default P3P")]
+            P3P,
+        }
 
         [Category("Settings")]
         [DisplayName("Skill and Item Descriptions")]
@@ -47,6 +54,15 @@ namespace p3ppc.qolcollection.Configuration
             "\n\nStock P3P: Uses the default P3P skill and item descriptions.")]
         [DefaultValue(DescriptionEnum.Maragion)]
         public DescriptionEnum Description { get; set; } = DescriptionEnum.Maragion;
+
+        [Category("Settings")]
+        [DisplayName("Models")]
+        [Description("Choose which models are used in battle." +
+            "\n\nPersona 3 FES: Uses Persona 3 FES models (by Pioziomgames). These models are higher" +
+            "\nquality than P3P's default models." +
+            "\n\nStock P3P: Uses the default P3P character models.")]
+        [DefaultValue(BattleModelEnum.P3F)]
+        public BattleModelEnum BattleModels { get; set; } = BattleModelEnum.P3F;
     }
 
     /// <summary>
